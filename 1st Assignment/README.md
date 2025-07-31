@@ -16,15 +16,17 @@ Port	Service	                     Info	                                         
 443	HTTPS	                     TLS active (encrypted)	                                        Low 
 7547	TR-069	                   ISP remote management open – risky	                            High
 
- Screenshot:<img width="827" height="664" alt="image" src="https://github.com/user-attachments/assets/28e72430-1a58-4935-9f96-4ff9b1885fbb" />
+ Screenshot:
+ 
+ <img width="827" height="664" alt="image" src="https://github.com/user-attachments/assets/28e72430-1a58-4935-9f96-4ff9b1885fbb" />
   
-Security Concerns
+Security Concerns:
 
 Port 22 (SSH) is open to the public. This makes it a common target for brute-force attacks.
 Port 7547 (TR-069) is often used by ISPs for remote router management. This port has been exploited by botnets like Mirai.
 Apache 2.4.29 is visible, and if not updated, attackers could exploit known vulnerabilities.No signs of a firewall – which means there’s nothing filtering incoming traffic.
 
-Recommendations
+Recommendations:
 
 Close Unused Ports,
 Use your router settings or a firewall like UFW to block risky ports like 22 and 7547 if not needed.
@@ -38,7 +40,7 @@ Set Up a Firewall.
 
 Conclusion:
 
-This self-audit showed that several services on my network are exposed to the internet  and some are high risk. Tools like Shodan help reveal what attackers can already see.By acting on this information, I can reduce my attack surface and make my system more secure.
+This audit revealed that my network has multiple services exposed to the internet ,some of which pose high security risks. Using Shodan helped me understand how visible and vulnerable my system could be to attackers.By taking preventive actions like updating software, configuring a firewall, and disabling unnecessary ports, I can reduce my attack surface and significantly improve the security of my network.
 
 
 
