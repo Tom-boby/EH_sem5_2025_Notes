@@ -2,7 +2,7 @@ Goal: To see what parts of my network are publicly visible to the internet — t
 
 Methodology
 
-Step 1: Find Public IP
+Step 1: Find Public IP 
 I visited whatismyipaddress.com to find my public IP address. ( I’ve masked it here:  103.105.227.98)
 
 Step 2: Scan with Shodan
